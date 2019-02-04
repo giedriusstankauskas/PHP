@@ -5,8 +5,8 @@
     return $daugyba;
     };
     $result = plotas($_POST['pirmaKrastine'], $_POST['antraKrastine']);
-    echo 'Pirma kraštinė yra: ' . $_POST['pirmaKrastine'] . '<br>';
-    echo 'Antra kraštinė yra: ' . $_POST['antraKrastine'] . '<br>';
+    echo 'Stačiakampio ilgis yra: ' . $_POST['pirmaKrastine'] . '<br>';
+    echo 'Stačiakampio plotis yra: ' . $_POST['antraKrastine'] . '<br>';
     echo "Stačiakampio plotas yra: $result m2";
     exit();
   };
@@ -24,8 +24,8 @@
 <body>
   <h3>Stačiakampio ploto skaičiavimas</h3>
   <form action="<?php $_PHP_SELF; ?>" method="POST">
-    Įveskite pirma stačiakampio kraštinė: <input type="text" name="pirmaKrastine">
-    Įveskite pirma stačiakampio kraštinė: <input type="text" name="antraKrastine">
+    Įveskite stačiakampio ilgį: <input type="text" name="pirmaKrastine">
+    Įveskite stačiakampio plotį: <input type="text" name="antraKrastine">
     <input type="submit" name="knopke">
   </form>
 
